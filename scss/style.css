@@ -1136,7 +1136,7 @@ footer .container-social i:hover {
     right: 10px;
   }
   body {
-    max-width: 500px !important;
+    width: 500px !important;
     overflow-x: hidden !important;
   }
   nav {
@@ -1209,7 +1209,7 @@ footer .container-social i:hover {
   }
   /*HOme responsive*/
   .home-container {
-    height: 60vh;
+    height: 80vh;
   }
   .svgMain {
     width: 600px;
