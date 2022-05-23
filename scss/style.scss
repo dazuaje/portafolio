@@ -949,8 +949,10 @@ footer .container-social i:hover{
    
     right: 10px;
   }
-  html{
-    width: 500px;
+  body{
+    max-width: 500px !important;
+    overflow-x: hidden !important;
+  
     
   }
     nav{
