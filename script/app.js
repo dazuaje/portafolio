@@ -113,31 +113,48 @@ function handleSubmit(e) {
       }, 4000);
   }
 
-
+  
 }
 
+/*
 const $esp = document.querySelector('.esp');
 const $eng = document.querySelector('.eng');
+*/
+
+
+
 
 const checkBox = document.querySelector('#checkbox');
 
 checkBox.addEventListener('click', () => {
+  
+  const esp = document.querySelector('.spanish');
+  const eng = document.querySelector('.english');
+  
+  if(checkBox.checked){
+    eng.classList.add('activenglish');
+    esp.classList.remove('activespanish')
 
-  if(checkBox.checked){ 
-
+    /*
     setTimeout(() => {
-      $eng.classList.add('activeModal');
+      
+      
+     $eng.classList.add('activeModal');
+    
+
+      
       
     }, 200);
     setTimeout(() => {
       
-      $esp.classList.remove('activeModal')
+     $esp.classList.remove('activeModal')
       
     }, 200);
 
     setTimeout(() => {
-      
+     
       $eng.classList.remove('activeModal')
+ 
       
     }, 1500);
 
@@ -148,24 +165,73 @@ checkBox.addEventListener('click', () => {
     //$esp.classList.toggle('activeModal');
     setTimeout(() => {
       
+      
       $eng.classList.remove('activeModal');
+
     }, 200);
     setTimeout(() => {
-      
       $esp.classList.add('activeModal');
+    
+
+
     }, 200);
 
     setTimeout(() => {
       
+      
       $esp.classList.remove('activeModal');
+
     }, 1500);
     //alert('Spanish');
     /*$
     $esp.style.visibility = 'visible'
     */
   }
+  else{
+    eng.classList.remove('activenglish');
+    esp.classList.add('activespanish')
+  }
 
     
   
       
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const btns = document.querySelector('.ntb'); 
+console.log(btns);

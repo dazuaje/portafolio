@@ -58,17 +58,18 @@
         <li><a href="#home-container"> Inicio </a></li>
         <li><a href="#aboutMe-container"> Sobre mi </a></li>
         <li><a href="#skills-container"> Skills </a></li>
-        <li><a href="#certificaciones-container"> Certificaciones </a></li>
         <li><a href="#project-container"> Proyectos </a></li>
         <li><a href="#contact-container"> Contact </a></li>
       </div>
 
       <!-- Switch Toggle -->
       
-      <!-- 
+      
 
-            <span>ES</span>
-          -->
+           <!---- <span>ES</span> -->
+          
+
+          
 
           <div class="switch">
         <span class="language spanish">ES</span>
@@ -93,14 +94,21 @@
         </button>
       </div>
     </ul>
-    <div class="modalLanguage esp">
-      <p>Español</p>
-    </div>
-  
-    <div class="modalLanguage eng">
-     <p>Inglés</p>
-   </div>
-  </nav>
+
+    
+
+    <!-----
+      <div class="modalLanguage esp">
+        <p>Español</p>
+      </div>
+      
+      <div class="modalLanguage eng">
+        <p>Ingles</p>
+      </div>
+      ------->
+      
+      
+    </nav>
   
 
   <!--Up arrow Icon--->
@@ -119,7 +127,7 @@
       <h2>FrontEnd Developer</h2>
 
       <a href="#contact-container">
-        <button>Contactame</button>
+        <button>Contáctame</button>
       </a>
 
     </div>
@@ -138,24 +146,29 @@
   <section id="aboutMe-container" class="aboutMe-container">
 
     <!--<h1>Sobre mi</h1>-->
+    <div class="aboutMeInside">
 
-  <div class="img">
+      
+      <div class="img">
+    
     
     <img src="/SVG/20211117_112405201_single.jpg" alt="">
   </div>
     
 
       <div class="aboutMe">
-        <h2>Soy David Azuaje FrontEnd Developer</h2>
+        <h2>Soy David Azuaje</h2>
+          <h5>FrontEnd Developer </h5>
         <p>Soy un programador web muy 
           dedicado y motivado en brindar 
           soluciones, aplicando lógica y buscando métodos resolutivos acordes. Me gustan los desafíos, ya que implican un constante aprendizaje, sea con un cambio de paradigma o una nueva tecnología.</p>
         <button class="downloadCV">Descargar CV</button>
       </div>
 
-  </section>
-  <!--Skills--->
-
+    </div>
+    </section>
+    <!--Skills--->
+    
   <section id="skills-container" class="skills-container">
     <h3 class="tecnologias">Tecnologias</h3>
 
@@ -252,13 +265,19 @@
 
   
   <div class="project-card">
-      <img class="project-image" src="./SVG/passwordProject.png" alt="">
+      <img class="project-image" src="./SVG/pass.png" alt="">
       <h3>Password generator</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolores.</p>
       
       <div class="project-btn-container">
-        <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
-        <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        <a href="https://github.com/dazuaje/generatorPassword" target="_blank" rel="noopener noreferrer">
+          <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
+        </a>
+
+        
+        <a href="https://generatorpasswordavidazuaje.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        </a>
       </div>
       
       <div class="tecnologies">
@@ -298,9 +317,8 @@
       <p class="backgroundMini">Lorem ipsuorem ipsum dolor sit amet consectetur adipisicing eorem
         sit amet consectetur adipisicing eorem ipsum dolor si
         sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si ipsum dolor sit amet consectetur adipisicing eorem ipsum
-        dolor sit amet consectetur adipisicing em dolor sit amet consectetur adipisicing elit. Sapiente, dolores.</p>
+        sit amet 
+        .</p>
 
       <div class="project-btn-container">
         <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
@@ -324,18 +342,21 @@
 
 
     <div class="project-card">
-      <img class="project-image" src="./SVG/passwordProject.png" alt="">
-      <h3>Titulo</h3>
+      <img class="project-image" src="./SVG/quotee.png" alt="">
+      <h3>Quote Generator</h3>
       <p class="backgroundMini">Lorem ipsuorem ipsum dolor sit amet consectetur adipisicing eorem
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si ipsum dolor sit amet consectetur adipisicing eorem ipsum
-        dolor sit amet consectetur adipisicing em dolor sit amet consectetur adipisicing elit. Sapiente, dolores.</p>
+        sit amet consectetur adipisicing eorems.</p>
 
       <div class="project-btn-container">
-        <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
-        <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        
+        <a href="https://github.com/dazuaje/quoteGenerator" target="_blank" rel="noopener noreferrer">
+          <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
+        </a>
+
+        <a href="https://generatorquotedavidazuaje.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        </a>
+
       </div>
 
       <div class="tecnologies">
@@ -354,14 +375,9 @@
 
 
     <div class="project-card">
-      <img class="project-image" src="./SVG/passwordProject.png" alt="">
-      <h3>Titulo</h3>
-      <p class="backgroundMini">Lorem ipsuorem ipsum dolor sit amet consectetur adipisicing eorem
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si
-        sit amet consectetur adipisicing eorem ipsum dolor si ipsum dolor sit amet consectetur adipisicing eorem ipsum
-        dolor sit amet consectetur adipisicing em dolor sit amet consectetur adipisicing elit. Sapiente, dolores.</p>
+      <img class="project-image" src="./SVG/todo.png" alt="">
+      <h3>React Project</h3>
+      <p class="backgroundMini">Lorem ipsuor.</p>
 
       <div class="project-btn-container">
         <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
@@ -385,17 +401,19 @@
   
   
   <div class="contact-map">
-    <h4>Argentina, Capital Federal</h4>
+    <h4>Ubicacion</h4>
     
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26264.513656465548!2d-58.502261552125624!3d-34.62781769899072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc99546769e49%3A0x4d754ad5ca377710!2sFloresta%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1651442658360!5m2!1sen!2sar"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68169458784!2d-58.57338521604302!3d-34.6157436867016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1651779311039!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
     
   </div>
   
   <div class="contact-form">
+
+
+
+
+
     
     
     <div class="successfullForm">
@@ -405,6 +423,11 @@
     <div class="successfullForm error">
       <p>Formulario no enviado revisa y envia nuevamente!</p>
     </div>
+
+
+
+
+
     
       <h4>Contacto</h4>
       <p>Puedes contactarme enviando un mail o a través de mis redes sociales.<br> <br>¡Espero tu mensaje!</p>
@@ -445,9 +468,8 @@
 
   </section>
 
-  <script src="/script/app.js"></script>
-  </div>
-  <div class="container-spinner">
+</div>
+<div class="container-spinner">
     <div class="spinner"></div>
   </div>
 
@@ -479,11 +501,9 @@
   </footer>
 
 
-
-
-
   <!----For the email--->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/script/app.js"></script>
 </body>
 
 </html>
