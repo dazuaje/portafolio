@@ -628,11 +628,13 @@ h3 {
   -webkit-filter: grayscale(100%);
 }
 
+/*
+
 .logos:hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
-
+*/
 /*----------Soft Skils----------*/
 .logos__softSkills {
   margin-top: 40px;
@@ -685,8 +687,21 @@ h3 {
   -o-transition: transform .6s linear;
 }
 
+.card:hover .logos {
+  /*
+   transform: translateY(10px);
+   -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  */
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
 .card:hover {
   transform: translateY(-10px);
+  cursor: pointer;
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
