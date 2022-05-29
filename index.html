@@ -55,11 +55,11 @@
       </svg>
 
       <div class="link-Container">
-        <li><a href="#home-container"> Inicio </a></li>
-        <li><a href="#aboutMe-container"> Sobre mi </a></li>
-        <li><a href="#skills-container"> Habilidades </a></li>
-        <li><a href="#project-container"> Proyectos </a></li>
-        <li><a href="#contact-container"> Contacto </a></li>
+        <li><a href="#home-container" class="inicioLang"> Inicio </a></li>
+        <li><a href="#aboutMe-container" class="sobreLang"> Sobre mi </a></li>
+        <li><a href="#skills-container" class="habilidadesLang"> skills </a></li>
+        <li><a href="#project-container" class="proyectosLang"> Proyectos </a></li>
+        <li><a href="#contact-container" class="contactLang"> Contacto </a></li>
       </div>
 
       <!-- Switch Toggle -->
@@ -72,12 +72,12 @@
           
 
           <div class="switch">
-        <span class="language spanish">Es</span>
+        <span class="language spanish spanishLang">Es</span>
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
           <div class="slider round"></div>
         </label>
-        <span class="language english">En</span> 
+        <span class="language english englishLang">En</span> 
       </div>
       <!-- 
 
@@ -97,7 +97,7 @@
 
     
 
-    <!-----
+    
       <div class="modalLanguage esp">
         <p>Español</p>
       </div>
@@ -105,7 +105,7 @@
       <div class="modalLanguage eng">
         <p>Ingles</p>
       </div>
-      ------->
+      
       
       
     </nav>
@@ -122,12 +122,12 @@
     <!---
     -->
     <div class="content">
-      <span>Hola! Soy</span>
+      <span class="saludoLang">Hola! Soy</span>
       <h1>David Jose Azuaje Torres</h1>
-      <h2>FrontEnd Developer</h2>
+      <h2 class="puestoLang">Desarrollador Web FrontEnd</h2>
 
       <a href="#contact-container">
-        <button>Contáctame</button>
+        <button class="contactameLang">Contáctame</button>
       </a>
 
     </div>
@@ -170,11 +170,11 @@
     <!--Skills--->
     
   <section id="skills-container" class="skills-container">
-    <h3 class="tecnologias">Tecnologias</h3>
+    <h3 class="tecnologias tecnologiasLang">Habilidades Tecnologias</h3>
 
     <div class="logos__container">
       <div class="card">
-        <img src="/img/html.png" data-tooltip="HTML" id="html" class="logos html" />
+        <img src="/img/html.png" id="html" class="logos html" />
         <h7>HTML5</h7>
       </div>
 
@@ -204,44 +204,49 @@
       </div>
     </div>
 
-    <h3 class="softSkillH">Habilidades Blandas</h3>
+    <h3 class="softSkillH softSkillLang">Habilidades Blandas</h3>
     <div class="logos__softSkills">
+
       
       <!--Problem Solving-->
       <div class="card">
-        <img src="/SVG/toolbox.png" class="icons" alt="" srcset="" />
-        <h7>Resolucion <br />
+      
+
+          <img src="/SVG/toolbox.png" class="icons" alt="" srcset="" />
+
+        
+        <h7 class="resolucionLang">Resolución <br>
           Problemas</h7>
       </div>
 
       <!--Metodico-->
       <div class="card">
         <img src="/SVG/steps.png" class="icons" alt="" srcset="" />
-        <h7>Metodico</h7>
+        <h7 class="metodicoLang">Metódico</h7>
       </div>
 
       <!---Creative-->
       <div class="card">
         <img src="/SVG/idea.png" class="icons" alt="" srcset="" />
-        <h7>Creatividad</h7>
+        <h7 class="creatividadLang">Creatividad</h7>
       </div>
       
+      <!---Comunicacion-->
       <div class="card">
         <img src="/SVG/megaphone.png" class="icons" alt="" srcset="" />
-        <h7>Comunicacion</h7>
+        <h7 class="comunicacionLang">Comunicación</h7>
       </div>
-      <!---Comunicacion-->
 
       <!---Trabajo en equipo-->
       <div class="card">
         <img src="/SVG/group (1).png" class="icons" alt="" srcset="" />
-        <h7>Trabajo <br> en equipo</h7>
+        <h7 class="equipoLang">Trabajo <br> en equipo</h7>
       </div>
 
       <!---Resiliente-->
       <div class="card">
         <img src="/SVG/man-in-hike.png" class="icons" alt="" srcset="" />
-        <h7>Resiliencia</h7>
+        <h7 class="resilienciaLang">Resiliencia</h7>
       </div>
     </div>
 
@@ -432,8 +437,9 @@
 
 
     
-      <h4>Contacto</h4>
-      <p>Puedes contactarme enviando un mail o a través de mis redes sociales.<br> <br>¡Espero tu mensaje!</p>
+      <h4 class="contactTitleLang">Contacto</h4>
+      <p class="contactMessageLang">Puedes contactarme enviando un mail o a través de mis redes sociales.</p>
+      <p class="contactMessageSecondLang">¡Espero tu mensaje!</p>
 
 
       
@@ -444,25 +450,25 @@
 
 
           <div class="fullname">
-            <label for="name">Nombre Completo:</label> <br>
+            <label class="fullNameLang" for="name">Nombre Completo:</label> <br>
             <input name='name' id='name' required type="text">
           </div>
           <div class="subject">
-            <label for="subject">Asunto:</label> <br>
+            <label class="subjectLang" for="subject">Asunto:</label> <br>
             <input name="subject" id='subject' required type="text">
           </div>
 
           <div class="email">
-            <label for="email">Correo:</label> <br>
+            <label class="emailLang" for="email">Correo:</label> <br>
             <input id="email" name='email' required type="text">
           </div>
 
 
           <div class="message">
-            <label for="message">Mensaje:</label><br>
+            <label class="messageLang" for="message">Mensaje:</label><br>
             <textarea placeholder="" required id="message" name="message" cols="31" rows="10"></textarea>
           </div>
-          <button type="submit" class="submit">Enviar</button>
+          <button type="submit" class="submit submitLang">Enviar</button>
         </div>
 
       </form>

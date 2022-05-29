@@ -1,3 +1,4 @@
+
 //Loader Spinner
 
 
@@ -126,6 +127,192 @@ const $eng = document.querySelector('.eng');
 
 const checkBox = document.querySelector('#checkbox');
 
+
+//Selectors to change
+
+//nav
+let $inicioLang = document.querySelector('.inicioLang');
+let $sobreLang = document.querySelector('.sobreLang');
+let $habilidadesLang = document.querySelector('.habilidadesLang');
+let $proyectosLang = document.querySelector('.proyectosLang');
+let $contactLang = document.querySelector('.contactLang');
+
+//Switch
+//let $englishLang = document.querySelector('.englishLang');
+//let $spanishLang = document.querySelector('.spanishLang');
+
+//content home
+let $saludoLang = document.querySelector('.saludoLang');
+let $puestoLang = document.querySelector('.puestoLang');
+let $contactameLang = document.querySelector('.contactameLang');
+
+//skills
+let $tecnologiasLang = document.querySelector('.tecnologiasLang');
+let $softskillLang = document.querySelector('.softSkillLang');
+
+//SoftSkills
+
+let $resolucionLang = document.querySelector('.resolucionLang');
+let $metodicoLang = document.querySelector('.metodicoLang');
+let $creatividadLang = document.querySelector('.creatividadLang');
+let $comunicacionLang = document.querySelector('.comunicacionLang');
+let $equipoLang = document.querySelector('.equipoLang');
+let $resilienciaLang = document.querySelector('.resilienciaLang');
+
+//Contact
+let $contactTitleLang = document.querySelector('.contactTitleLang');
+let $contactMessageLang = document.querySelector('.contactMessageLang');
+let $contactMessageSecondLang = document.querySelector('.contactMessageSecondLang')
+
+let $fullNameLang = document.querySelector('.fullNameLang');
+let $subjectLang = document.querySelector('.subjectLang');
+let $emailLang = document.querySelector('.emailLang');
+let $messageLang = document.querySelector('.messageLang');
+let $submitLang = document.querySelector('.submitLang');
+
+
+
+/*Data for translate */
+
+let dataExchange = {
+  english:{
+    
+    
+    //Nav
+    "inicio":"Home",
+    "sobreMi":"About Me",
+    "habilidades":"Skills",
+    "proyectos":"Projects",
+    "contacto":"Contact",
+
+    //Content
+    "saludo":"Hi! I'm",
+    "puesto":"FrontEnd Developer",
+    "contactame":"Contact Me",
+
+    //SoftSkills
+
+    "tecnology":"Skills Technologies",
+
+    "softSkill": "Soft Skills",
+
+    "resolucion":"Problem-Solving",
+    "metodico":"Methodical",
+    "creatividad":"Creativity",
+    "comunicacion":"Communication",
+    "equipo":"Teamwork",
+    "resiliencia":"Resilience",
+
+    //contact
+
+    "contactTitle":"Contact",
+    "contactMessage":"You can contact me by sending an email through my social networks.",
+    "contactMessageSecond":"I look forward to your message!!",
+
+    //
+    "nameForm":"Full Name:",
+    "subjectForm":"Subject:",
+
+    "emailForm":"Email:",
+    "messageForm":"Message:",
+    "submitForm":"Send",
+
+
+
+
+
+
+
+    
+  },
+  spanish:{
+
+    
+    // Nav
+    "inicio":"Inicio",
+    "sobreMi":"Sobre Mi",
+    "habilidades":"Habilidades",
+    "proyectos":"Proyectos",
+    "contacto":"Contacto",
+    
+    //Content
+    "saludo":"Hola! Soy",
+    "puesto":"Desarrollador Web FrontEnd",
+    "contactame":"Contáctame",
+
+    //SoftSkills
+
+    "tecnology":"Habilidades Tecnologias",
+    "softSkill": "Habilidades Blandas",
+
+    "resolucion":"Resolución Problemas",
+    "metodico":"Metódico",
+    "creatividad":"Creatividad",
+    "comunicacion":"Comunicación",
+    "equipo":"Trabajo en equipo",
+    "resiliencia":"Resiliencia",
+    
+    //contact
+
+    "contactTitle":"Contacto",
+    "contactMessage":"Puedes contactarme enviando un mail o a través de mis redes sociales.",
+    "contactMessageSecond":"¡Espero tu mensaje!",
+    
+    //
+    "nameForm":"Nombre Completo:",
+    "subjectForm":"Asunto:",
+    
+    "emailForm":"Correo:",
+    "messageForm":"Mensaje:",
+    "submitForm":"Enviar",
+    
+    
+
+    
+
+
+  },
+};
+
+
+console.log(dataExchange);
+
+
+function changeLanguage(language){
+
+  //nav
+  $inicioLang.textContent = language.inicio;
+  $sobreLang.textContent = language.sobreMi;
+  $habilidadesLang.textContent = language.habilidades;
+  $proyectosLang.textContent = language.proyectos;
+  $contactLang.textContent = language.contacto;
+  //content home
+  $saludoLang.textContent = language.saludo;
+  $puestoLang.textContent = language.puesto;
+  $contactameLang.textContent = language.contactame;
+  //Project
+  $tecnologiasLang.textContent = language.tecnology;
+  $softskillLang.textContent = language.softSkill;
+  //Items
+  $resolucionLang.textContent = language.resolucion;
+  $metodicoLang.textContent = language.metodico;
+  $creatividadLang.textContent = language.creatividad;
+  $comunicacionLang.textContent = language.comunicacion;
+  $equipoLang.textContent = language.equipo;
+  $resilienciaLang.textContent = language.resiliencia;
+  //Contact
+  $contactTitleLang.textContent = language.contactTitle;
+  $contactMessageLang.textContent = language.contactMessage;
+  $contactMessageSecondLang.textContent = language.contactMessageSecond;
+
+  $fullNameLang.textContent = language.nameForm;
+  $subjectLang.textContent = language.subjectForm;
+  $emailLang.textContent = language.emailForm;
+  $messageLang.textContent = language.messageForm;
+  $submitLang.textContent = language.submitForm;
+
+}
+
 checkBox.addEventListener('click', () => {
   
   const esp = document.querySelector('.spanish');
@@ -133,7 +320,10 @@ checkBox.addEventListener('click', () => {
   
   if(checkBox.checked){
     eng.classList.add('activenglish');
-    esp.classList.remove('activespanish')
+    esp.classList.remove('activespanish');
+
+    let ingles = dataExchange.english;
+   changeLanguage(ingles)
 
     /*
     setTimeout(() => {
@@ -189,7 +379,11 @@ checkBox.addEventListener('click', () => {
   }
   else{
     eng.classList.remove('activenglish');
-    esp.classList.add('activespanish')
+    esp.classList.add('activespanish');
+
+    let espanol = dataExchange.spanish;
+   
+    changeLanguage(espanol);
   }
 
     
@@ -234,4 +428,4 @@ checkBox.addEventListener('click', () => {
 
 
 const btns = document.querySelector('.ntb'); 
-console.log(btns);
+//console.log(btns);
