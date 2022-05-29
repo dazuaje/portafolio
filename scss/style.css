@@ -233,10 +233,26 @@ html {
 
 .switch .spanish.activespanish {
   color: #374151;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transform: rotateY(10px);
+  -webkit-transform: rotateY(10px);
+  -moz-transform: rotateY(10px);
+  -ms-transform: rotateY(10px);
+  -o-transform: rotateY(10px);
 }
 
 .switch .english.activenglish {
   color: #374151;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transform: rotateY(10px);
+  -webkit-transform: rotateY(10px);
+  -moz-transform: rotateY(10px);
+  -ms-transform: rotateY(10px);
+  -o-transform: rotateY(10px);
 }
 
 .theme-switch {
@@ -951,7 +967,7 @@ project-card .project-btn-container button:hover {
 .contact-form {
   background-color: white;
   color: black;
-  width: 50%;
+  width: 100%;
 }
 
 form {

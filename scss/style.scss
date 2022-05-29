@@ -192,9 +192,26 @@ html{
 }
 .switch .spanish.activespanish{
   color: $Blue;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transform: rotateY(10px);
+  -webkit-transform: rotateY(10px);
+  -moz-transform: rotateY(10px);
+  -ms-transform: rotateY(10px);
+  -o-transform: rotateY(10px);
 }
+
 .switch .english.activenglish{
   color: $Blue;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transform: rotateY(10px);
+  -webkit-transform: rotateY(10px);
+  -moz-transform: rotateY(10px);
+  -ms-transform: rotateY(10px);
+  -o-transform: rotateY(10px);
 }
 
 
@@ -308,9 +325,8 @@ nav {
     -o-transition: color .2s linear;
 }
   li a:hover{
-    
     color: $Blue;
-  }
+}
 
   .link-Container {
     display: flex;
@@ -799,7 +815,7 @@ project-card .project-btn-container button:hover{
  
   background-color: white;
   color:black;
-  width: 50%;
+  width: 100%;
   
 }
 form{
