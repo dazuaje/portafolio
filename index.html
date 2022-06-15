@@ -57,7 +57,7 @@
       <div class="link-Container">
         <li><a href="#home-container" class="inicioLang"> Inicio </a></li>
         <li><a href="#aboutMe-container" class="sobreLang"> Sobre mi </a></li>
-        <li><a href="#skills-container" class="habilidadesLang"> skills </a></li>
+        <li><a href="#skills-container" class="habilidadesLang"> Habilidades </a></li>
         <li><a href="#project-container" class="proyectosLang"> Proyectos </a></li>
         <li><a href="#contact-container" class="contactLang"> Contacto </a></li>
       </div>
@@ -74,7 +74,7 @@
           <div class="switch">
         <span class="language spanish spanishLang">Es</span>
         <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
+          <input type="checkbox" id="checkbox" checked/>
           <div class="slider round"></div>
         </label>
         <span class="language english englishLang">En</span> 
@@ -99,12 +99,14 @@
 
     
       <div class="modalLanguage esp">
-        <p>Español</p>
+        <p class="languageText" data-language="Spanish">English</p>
       </div>
-      
-      <div class="modalLanguage eng">
-        <p>Ingles</p>
-      </div>
+      <!-- 
+
+        <div class="modalLanguage eng">
+          <p>Ingles</p>
+        </div>
+      -->
       
       
       
@@ -170,6 +172,7 @@
     <!--Skills--->
     
   <section id="skills-container" class="skills-container">
+    <br>
     <h3 class="tecnologias tecnologiasLang">Habilidades Tecnologias</h3>
 
     <div class="logos__container">
@@ -259,8 +262,8 @@
   <!-----
       <a href="#" title="Hello from speech bubble!" class="tooltip">CSS Tooltip! Hover me!</a>
     -->
-    <section id="project-container" class="project-container">
     <h2 class="h2-proyecto">Proyectos</h2>
+    <section id="project-container" class="project-container">
 
 
 
@@ -270,7 +273,14 @@
 
   
   <div class="project-card">
+    <!--  
+
       <img class="project-image" src="./SVG/pass.png" alt="">
+    -->
+ <div class="video-container">
+
+   <video src="./video/passwordGeneratorVideo (online-video-cutter.com).mp4" class="passwordGenerator"></video>
+  </div>
       <h3>Password generator</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolores.</p>
       
@@ -317,8 +327,15 @@
 
 
     <div class="project-card">
-      <img class="project-image" src="./SVG/backgroundPicker.png" alt="">
-      <h3>Background Picker</h3>
+      <!--- 
+        <img class="project-image" src="./SVG/backgroundPicker.png" alt="">
+      -->
+      
+      <div class="video-container">
+
+        <video src="./video/passwordGeneratorVideo (online-video-cutter.com).mp4" class="passwordGenerator"></video>
+       </div>
+      <h3>Finance Tracker</h3>
       <p class="backgroundMini">Lorem ipsuorem ipsum dolor sit amet consectetur adipisicing eorem
         sit amet consectetur adipisicing eorem ipsum dolor si
         sit amet consectetur adipisicing eorem ipsum dolor si
@@ -326,8 +343,14 @@
         .</p>
 
       <div class="project-btn-container">
-        <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
-        <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        
+        <a href="https://github.com/ghmex/financeTracker" target="_blank" rel="noopener noreferrer">
+          <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
+        </a>
+        <a href="https://financetrackerpescar.netlify.app/" target="_blank" rel="noopener noreferrer">
+
+          <button class="btn-demo"> Demo <i class="fa-solid fa-eye"></i></button>
+        </a>
       </div>
 
       <div class="tecnologies">
@@ -346,13 +369,21 @@
 
 
 
+    <!----
     <div class="project-card">
-      <img class="project-image" src="./SVG/quotee.png" alt="">
+        <img class="project-image" src="./SVG/quotee.png" alt="">
+        
+        <div class="video-container">
+
+        <video src="./video/adviceGenerator (online-video-cutter.com).mp4" class="adviceGenerator"></video>
+       </div>
       <h3>Quote Generator</h3>
       <p class="backgroundMini">Lorem ipsuorem ipsum dolor sit amet consectetur adipisicing eorem
         sit amet consectetur adipisicing eorems.</p>
 
       <div class="project-btn-container">
+
+       
         
         <a href="https://github.com/dazuaje/quoteGenerator" target="_blank" rel="noopener noreferrer">
           <button class="btn-visitar">Visitar<i class="fa-brands fa-github" class="socialMedia"></i></button>
@@ -363,7 +394,7 @@
         </a>
 
       </div>
-
+      
       <div class="tecnologies">
         <img src="/img/html.png" alt="">
         <img src="/img/css.png" alt="">
@@ -374,12 +405,14 @@
       
 
     </div>
+  -->
+    
+    
 
 
-
-
-
-    <div class="project-card">
+    <!-----
+      
+      <div class="project-card">
       <img class="project-image" src="./SVG/todo.png" alt="">
       <h3>React Project</h3>
       <p class="backgroundMini">Lorem ipsuor.</p>
@@ -393,12 +426,13 @@
         <img src="/img/html.png" alt="">
         <img src="/img/css.png" alt="">
         <img src="/img/js.png" alt="">
-
+        
         
       </div>
-
-
     </div>
+  -->
+
+
   </div>
 </section>
 
@@ -445,9 +479,9 @@
       
 
 
-      <form id="form">
-        <div class="fieldsForm">
-
+      <div class="fieldsForm">
+        
+        <form id="form" action="https://formspree.io/f/mzbooygn" method="POST">
 
           <div class="fullname">
             <label class="fullNameLang" for="name">Nombre Completo:</label> <br>
@@ -469,10 +503,10 @@
             <textarea placeholder="" required id="message" name="message" cols="31" rows="10"></textarea>
           </div>
           <button type="submit" class="submit submitLang">Enviar</button>
-        </div>
-
-      </form>
-      <a href="mailto:davidazuaje1084@gmail.com" id="mailto">Email</a>
+          
+        </form>
+      </div>
+    <!---- <a href="mailto:davidazuaje1084@gmail.com" id="mailto">Email</a> -->
     </div>
 
   </section>
@@ -508,6 +542,8 @@
 
     </div>
   </footer>
+
+  
 
 
   <!----For the email--->

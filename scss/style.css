@@ -389,7 +389,34 @@ nav .link-Container {
   width: 600px;
 }
 
-.modalLanguage {
+/*
+.modalLanguage{
+  display: block;
+  visibility: visible;
+  position: sticky;
+  top: 10px;
+  margin: 0 auto;
+  width: 150px;
+  background-color: $Blue;
+  color: white;
+  font-size: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  
+}
+
+.modalLanguage.activeModal{
+  visibility: visible;
+}
+
+.modalLanguage p{
+  position: relative;
+  top: 5px;
+}
+*/
+.esp {
   display: block;
   visibility: hidden;
   position: -webkit-sticky;
@@ -405,11 +432,11 @@ nav .link-Container {
   cursor: pointer;
 }
 
-.modalLanguage.activeModal {
+.esp.activeModal {
   visibility: visible;
 }
 
-.modalLanguage p {
+.esp p {
   position: relative;
   top: 5px;
 }
@@ -597,6 +624,7 @@ nav .link-Container {
   width: 100vw;
   background-color: #fff;
   z-index: 0;
+  margin-top: 50px;
 }
 
 h3 {
@@ -751,7 +779,7 @@ h3 {
   color: white;
   background-color: #374151;
   font-size: 40px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .project-container {
@@ -868,10 +896,11 @@ h3 {
   font-size: 16px;
 }
 
-.project-card .backgroundMini {
-  /*overflow-y: scroll*/
+/*
+.project-card .backgroundMini{
+  /*overflow-y: scroll
 }
-
+*/
 .project-card .project-btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,6 +983,44 @@ project-card .project-btn-container button:hover {
   -webkit-filter: grayscale(0);
 }
 
+.video-container {
+  overflow: hidden;
+  height: 170px;
+}
+
+.project-card video {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: .5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.project-card video:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.project-card video:hover {
+  position: relative;
+  /*
+  width: 250px;
+  height: 250px;
+  */
+  margin-right: 50px;
+}
+
 /*--Contact-----------*/
 .contact-container {
   height: 100vh;
@@ -998,7 +1065,7 @@ h4 {
 
 p {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 20px;
 }
 
@@ -1018,7 +1085,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 500px;
-  margin-top: 50px;
+  margin-top: 4px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1029,11 +1096,11 @@ p {
 }
 
 .subject {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .email {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .message textarea {
@@ -1163,6 +1230,9 @@ footer .container-social i:hover {
 }
 
 @media screen and (max-width: 500px) {
+  a {
+    text-decoration: none !important;
+  }
   .container-up {
     right: 10px;
   }
@@ -1195,11 +1265,11 @@ footer .container-social i:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 575px;
+    margin-top: 500px;
     background-color: #374151;
     z-index: 10000;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     right: 100%;
     padding: 0 0 100px 0;
     transition: right .3s;
@@ -1293,7 +1363,7 @@ footer .container-social i:hover {
             align-items: center;
   }
   .aboutMe-container {
-    height: 100vh;
+    height: 130vh;
   }
   /*AQUI*/
   .aboutMe h2 {
@@ -1304,8 +1374,8 @@ footer .container-social i:hover {
     font-size: 8px;
   }
   .aboutMe-container img {
-    width: 200px;
-    height: 210px;
+    width: 120px;
+    height: 140px;
     margin: 0 0;
   }
   .aboutMe-container .aboutMe p {
@@ -1331,6 +1401,8 @@ footer .container-social i:hover {
   }
   .softSkillH {
     font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
   }
   .logos {
     margin-top: 10px;
@@ -1355,7 +1427,7 @@ footer .container-social i:hover {
     margin-top: 145px;
   }
   .skills-container {
-    height: 80vh;
+    height: 100vh;
   }
   /*Projects*/
   .project-containerMini {
@@ -1363,11 +1435,11 @@ footer .container-social i:hover {
     gap: 60px 10px;
   }
   .project-container {
-    height: 140vh;
+    height: 150vh;
   }
   .project-card {
     border-radius: 10px;
-    width: 210px;
+    width: 300px;
     margin-left: 20px;
     margin-bottom: 20px;
     background-color: white;
@@ -1397,10 +1469,10 @@ footer .container-social i:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 120vh;
+    height: 80vh;
   }
   .fieldsForm {
-    height: 700px;
+    /*height: 700px;*/
     margin-top: 10px;
     font-size: 15px;
   }

@@ -1,6 +1,20 @@
 
 //Loader Spinner
 
+/*
+const video = document.querySelector('video');
+video.currentTime = 3;
+video.addEventListener('mouseover', () => {
+
+  video.play()
+})
+
+video.addEventListener('mouseleave', () => {
+
+  video.pause()
+})
+*/
+
 
 window.addEventListener("load", () => {
   let containerSpinner = document.querySelector(".container-spinner");
@@ -66,20 +80,7 @@ function handleSubmit(e) {
      
      
      if (email && /(^\w.*@\w+\.\w)/.test(email)) {
-          
-          Email.send({
-               Host: "smtp.gmail.com",
-         Username: "davidazuaje1084@gmail.com",
-         Password: `FCbarcelona01*`,
-         To: "davidazuaje1084@gmail.com",
-         From: document.querySelector("#email").value,
-         Subject: `Contact from Personal Portfolio: Nombre: ${name}  Subject: ${subject}`,
-         Body: `<b>The email:<b/> ${email}, 
-                    name: ${name}
-                    message: ${message}
-                    
-                    `,
-       });
+      
       $form.reset();
       
       setTimeout(() => {
@@ -312,78 +313,48 @@ function changeLanguage(language){
   $submitLang.textContent = language.submitForm;
 
 }
+//LocalStorage
+/*
+let espaniol = true
+let pave = localStorage.setItem("Languages",espaniol );
+console.log(pave);
+*/
 
+const languageText = document.querySelector('.languageText');
+const esp = document.querySelector('.esp');
 checkBox.addEventListener('click', () => {
-  
-  const esp = document.querySelector('.spanish');
-  const eng = document.querySelector('.english');
-  
-  if(checkBox.checked){
-    eng.classList.add('activenglish');
-    esp.classList.remove('activespanish');
 
+  if(checkBox.checked){
+   
+   
+
+  esp.classList.add('activeModal');
+  languageText.textContent = 'English';
+  setTimeout(() => {
+    esp.classList.remove("activeModal");
+  }, 500);
+  //console.log(modalLanguage);
     let ingles = dataExchange.english;
    changeLanguage(ingles)
 
-    /*
-    setTimeout(() => {
-      
-      
-     $eng.classList.add('activeModal');
-    
-
-      
-      
-    }, 200);
-    setTimeout(() => {
-      
-     $esp.classList.remove('activeModal')
-      
-    }, 200);
-
-    setTimeout(() => {
-     
-      $eng.classList.remove('activeModal')
- 
-      
-    }, 1500);
-
-    //alert('English');
-  
-  }
-  else{ 
-    //$esp.classList.toggle('activeModal');
-    setTimeout(() => {
-      
-      
-      $eng.classList.remove('activeModal');
-
-    }, 200);
-    setTimeout(() => {
-      $esp.classList.add('activeModal');
-    
-
-
-    }, 200);
-
-    setTimeout(() => {
-      
-      
-      $esp.classList.remove('activeModal');
-
-    }, 1500);
-    //alert('Spanish');
-    /*$
-    $esp.style.visibility = 'visible'
-    */
   }
   else{
-    eng.classList.remove('activenglish');
-    esp.classList.add('activespanish');
-
+    
+   
+    
     let espanol = dataExchange.spanish;
    
     changeLanguage(espanol);
+    
+    
+    esp.classList.add('activeModal');
+    languageText.textContent = languageText.dataset.language;
+    
+ 
+  setTimeout(() => {
+    esp.classList.remove("activeModal");
+  }, 500);
+   
   }
 
     
@@ -391,8 +362,34 @@ checkBox.addEventListener('click', () => {
       
 })
 
+/*
+
+//Efecto Hover de Card video 
+
+const projectCard = document.querySelectorAll('.project-card');
+console.log(projectCard);
+
+const video = document.querySelector('.adviceGenerator');
 
 
+projectCard.forEach( (item, index) => {
+  item.addEventListener('mouseover', () => {
+    console.log(item,index);
+    video.currentTime = 3;
+    video.play();
+  })
+
+  item.addEventListener('mouseleave', () => {
+    console.log(item,index);
+    video.pause();
+  })
+  
+})
+
+projectCard.addEventListener('click', () => {
+  projectCard.forEach( (e, currentIndex) => { console.log(`Click de ${currentIndex}`) })
+})
+*/
 
 
 
