@@ -360,14 +360,37 @@ checkBox.addEventListener('click', () => {
     
   
       
-})
+});
+
+
+
+const projectCard = document.querySelectorAll('.project-card');
+console.log(projectCard);
+
+const videos = document.querySelectorAll('video');
+console.log(videos);
+
+projectCard[0].addEventListener('mouseover', () => {
+  videos[0].play();
+});
+
+projectCard[0].addEventListener('mouseleave', () => {
+  videos[0].pause();
+});
+
+projectCard[1].addEventListener('mouseover', () => {
+  videos[1].play();
+
+});
+
+projectCard[1].addEventListener('mouseleave', () => {
+  videos[1].pause();
+});
 
 /*
 
 //Efecto Hover de Card video 
 
-const projectCard = document.querySelectorAll('.project-card');
-console.log(projectCard);
 
 const video = document.querySelector('.adviceGenerator');
 
