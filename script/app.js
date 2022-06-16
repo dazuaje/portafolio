@@ -159,6 +159,12 @@ let $creatividadLang = document.querySelector('.creatividadLang');
 let $comunicacionLang = document.querySelector('.comunicacionLang');
 let $equipoLang = document.querySelector('.equipoLang');
 let $resilienciaLang = document.querySelector('.resilienciaLang');
+//Project 
+let $proyectosTitleLang = document.querySelector('.projectTitleLang');
+let $passwordGeneratorTextLang = document.querySelector('.passwordGeneratorTextLang');
+//let $visitarLang = document.querySelector('.visitarLang');
+let $financeTrackerTextLang = document.querySelector('.financeTrackerTextLang');
+
 
 //Contact
 let $contactTitleLang = document.querySelector('.contactTitleLang');
@@ -203,6 +209,13 @@ let dataExchange = {
     "comunicacion":"Communication",
     "equipo":"Teamwork",
     "resiliencia":"Resilience",
+
+    //Project
+    "titleProject": "Projects",
+    "passwordText": "Is a tool that automatically generates a password based on guidelines that you set to create strong passwords. ", 
+    "financeText": "Website to help users with the management of their personal finances, an intuitive graph will help you quickly determine the current state of your finances.", 
+   // "btnVisitar": "Visit", 
+
 
     //contact
 
@@ -252,6 +265,13 @@ let dataExchange = {
     "comunicacion":"Comunicación",
     "equipo":"Trabajo en equipo",
     "resiliencia":"Resiliencia",
+
+
+    //Project
+    "titleProject": "Proyectos",
+    "passwordText": "Es una herramienta que genera automáticamente una contraseña según las pautas que usted establece para crear contraseñas seguras.", 
+    "financeText": "Sitio web para ayudar a los usuarios con el manejo de sus finanzas personales, un gráfico intuitivo le ayudará a determinar el estado actual de sus finanzas.", 
+    //"btnVisitar": "Visitar", 
     
     //contact
 
@@ -301,6 +321,11 @@ function changeLanguage(language){
   $comunicacionLang.textContent = language.comunicacion;
   $equipoLang.textContent = language.equipo;
   $resilienciaLang.textContent = language.resiliencia;
+
+  //Project
+  $proyectosTitleLang.textContent = language.titleProject;
+  $passwordGeneratorTextLang.textContent = language.passwordText;
+  $financeTrackerTextLang.textContent = language.financeText
   //Contact
   $contactTitleLang.textContent = language.contactTitle;
   $contactMessageLang.textContent = language.contactMessage;
@@ -319,6 +344,7 @@ let espaniol = true
 let pave = localStorage.setItem("Languages",espaniol );
 console.log(pave);
 */
+
 
 const languageText = document.querySelector('.languageText');
 const esp = document.querySelector('.esp');

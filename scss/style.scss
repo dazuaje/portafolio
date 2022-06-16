@@ -438,6 +438,7 @@ nav {
     }
     .content button{
       padding: 20px 0;
+      border-radius: 10px;
       margin-top: 20px;
       width: 200px;
       background-color: #3eaf7c;
@@ -451,6 +452,10 @@ nav {
       -moz-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
       -ms-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
       -o-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
 }
     .content button:hover{
       box-shadow: inset 0 100px 0 0 #374151 ;
@@ -515,9 +520,10 @@ nav {
 .aboutMe-container .aboutMe button{
     text-align: center;
     margin-top: 60px;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
-    width: 270px;
+    border-radius: 10px;
+    width: 200px;
     border: 2px solid #3eaf7c;
     color: $Blue;
     font-weight: 600;
@@ -530,6 +536,10 @@ nav {
     -moz-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
     -ms-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
     -o-transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
     .aboutMe-container .aboutMe button:hover{
     box-shadow: inset 0 100px 0 0 $Cyan ;
@@ -1212,7 +1222,12 @@ footer .container-social i:hover{
     }
     .aboutMe-container .aboutMe button{
       margin: 50px auto;
-    }
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
     .logos__container{
       width: 500px;
     }
