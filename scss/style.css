@@ -1243,17 +1243,20 @@ footer .container-social i:hover {
   a {
     text-decoration: none !important;
   }
+  html {
+    width: 500px;
+  }
   .container-up {
     right: 10px;
   }
   body {
     width: 500px !important;
     /*
-    overflow-x: hidden !important;
     */
+    overflow-x: hidden !important;
   }
   nav {
-    width: 100%;
+    width: 500px;
     height: 80px;
     position: fixed;
     background-color: #3eaf7c;
